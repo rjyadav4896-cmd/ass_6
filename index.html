@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Student Registration Form</h2>
+
+      <form id="registrationForm">
+        <!-- Full Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" />
+        <span id="nameError" class="error"></span>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
+        <span id="emailError" class="error"></span>
+
+        <!-- Mobile Number -->
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" />
+        <span id="mobileError" class="error"></span>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <span id="passwordError" class="error"></span>
+
+        <!-- Confirm Password -->
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <span id="confirmPasswordError" class="error"></span>
+
+        <!-- Terms and Conditions -->
+        <div class="terms">
+          <input type="checkbox" id="terms" />
+          <label for="terms"> I accept the Terms & Conditions </label>
+        </div>
+
+        <span id="termsError" class="error"></span>
+
+        <!-- Register Button -->
+        <button type="submit">Register</button>
+
+        <!-- Success Message -->
+        <p id="success"></p>
+      </form>
+    </div>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
